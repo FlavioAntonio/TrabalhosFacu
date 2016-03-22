@@ -86,8 +86,7 @@ public class Hinario extends JFrame implements ActionListener {
 //Ola mundo estou tentando aprender este negosso 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//metodo que vai chamar o video!ldfjlksfjhjfkjfaj
-		//dkfadapdfiakfldkãç
+		//Agora estou comesando a intender como funcionar este negosso
 		chamarVideo();
 	}
 }
