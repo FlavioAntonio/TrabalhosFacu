@@ -19,9 +19,6 @@ public class Hinario extends JFrame implements ActionListener {
 	private JPanel contentPane;
 	private JTextField textField;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -34,10 +31,6 @@ public class Hinario extends JFrame implements ActionListener {
 			}
 		});
 	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Hinario() {
 		setTitle("Hinario Adventista do Sentimo Dia");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -81,7 +74,6 @@ public class Hinario extends JFrame implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		chamarVideo();
