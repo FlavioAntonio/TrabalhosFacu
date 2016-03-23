@@ -50,7 +50,7 @@ public class Hinario extends JFrame implements ActionListener {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel lblHinarioAdventistaDo = new JLabel("Hinário Adventista do Setimo dia");
+		JLabel lblHinarioAdventistaDo = new JLabel("Hinario Adventista do Setimo dia");
 		lblHinarioAdventistaDo.setToolTipText("Vamos adorar ao Senhor!");
 		lblHinarioAdventistaDo.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblHinarioAdventistaDo.setBounds(86, 24, 264, 14);
@@ -66,7 +66,7 @@ public class Hinario extends JFrame implements ActionListener {
 		contentPane.add(textField);
 		textField.setColumns(10);
 		textField.addActionListener(this);
-		JLabel lblOsHinosVo = new JLabel("Os Hinos de 1 a 610");
+		JLabel lblOsHinosVo = new JLabel("Hinos de 1 a 610");
 		lblOsHinosVo.setFont(new Font("Tahoma", Font.ITALIC, 14));
 		lblOsHinosVo.setBounds(131, 236, 197, 14);
 		contentPane.add(lblOsHinosVo);
@@ -74,8 +74,6 @@ public class Hinario extends JFrame implements ActionListener {
 
 	public void chamarVideo() {
 		try {
-			// Exemplo de caminho para o programa e para o arquivo que se deseja
-			// executar
 			String caminhoMPlayer = "cmd.exe /c start wmplayer.exe /play /fullScreen";
 			String caminhoArquivo = "C:\\Hinario/" + textField.getText() + ".mp4";
 			Runtime.getRuntime().exec(caminhoMPlayer + caminhoArquivo);
@@ -83,10 +81,9 @@ public class Hinario extends JFrame implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-//Ola mundo estou tentando aprender este negosso 
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//Agora estou comesando a intender como funcionar este negosso
 		chamarVideo();
 	}
 }
